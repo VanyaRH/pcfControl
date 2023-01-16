@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <control namespace="PCFInput"
+       constructor="PCFInputControl"
+       version="1.1.0"
+       display-name-key="PCFInputControl_Display_Key"
+       description-key="PCFInputControl_Desc_Key"
+       control-type="standard">
+       <type-group name="strings">
+          <type>SingleLine.Text</type>
+       </type-group>
+       <property name="controlValue"
+          display-name-key="controlValue_Display_Key"
+          description-key="controlValue_Desc_Key"
+          of-type-group="strings"
+          usage="bound"
+          required="true" />
+       <resources>
+          <code path="index.ts"
+             order="1" />
+          <css path="css/PCFInputControl.css"
+             order="1" />
+       </resources>
+    </control>
+</manifest>
